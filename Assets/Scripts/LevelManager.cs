@@ -7,8 +7,8 @@ public class LevelManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+        
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -17,7 +17,7 @@ public class LevelManager : MonoBehaviour {
 
     public void LoadNewScene(string sceneName)
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene("Level1");
     }
 
     public void QuitGame()
