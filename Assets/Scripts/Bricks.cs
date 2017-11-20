@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Bricks : MonoBehaviour {
+    public int maxHits;
     int timesHit;
 	// Use this for initialization
 	void Start () {
@@ -18,5 +19,10 @@ public class Bricks : MonoBehaviour {
     {
         timesHit++;
         print(gameObject.name + " : " + timesHit);
+
+        if (timesHit >= maxHits)
+        {
+            Destroy(gameObject);
+        }
     }
 }
